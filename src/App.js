@@ -1,21 +1,23 @@
 import React from "react";
-import Header from "./components/Header";
-import data from "./data.json"
-console.log(data)
-export default function App () {
-  const card = data.map(item => {
-    return (
-      <Header 
-        name={item.name}
-        temperature={item.temperature}
-      />
-    )
-    
-  })
 
+import Mercury from "./pages/mercury";
+import Venus from "./pages/Venus";
+import Navigation from "./components/navigation";
+import Earth from "./pages/Earth"
+import Mars from "./pages/Mars"
+import Jupiter from "./pages/Jupiter"
+import Saturn from "./pages/Saturn"
+
+export default function App() {
   return (
     <div>
-      {card}
+      <Navigation />
+      <Mercury />
+      <Venus />
+      <Earth />
+      <Mars />
+      <Jupiter />
+      <Saturn />
     </div>
-  )
+  );
 }
