@@ -1,29 +1,28 @@
 import React, { Component } from "react";
-import "./navigation.css";
-import { createRoot } from "react-dom/client";
+import data from "../data.json";
+import Header from "./Header"
+import "./Header.css"
 
-// export default function Welcome(props) {
-//     console.log(props)
-//     return (
-        
-//         <li>
-//           <a href="#">{props.name}</a>
-//         </li>
-//     )
-// }
 
-export default function Navigation(props) {
+
+export default function Navigation () {
+  const changedData = data.map((item) => {
+    return (
+      <Header name={item.name} /> 
+    )
+  });
+
   return (
-    <header>
-      <nav>
-        <ul>
-            <li>
-                <a>{props.name}</a>
-            </li>
-        </ul>
-      </nav>
-    </header>
+    <div>
+      <header className="header">
+        <h1>The Planets</h1>
+        <nav>
+          <ul>
+            {changedData}
+          </ul>
+        </nav>
+      </header>
+      <hr></hr>  
+    </div>
   );
 }
-
-

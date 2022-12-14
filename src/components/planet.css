@@ -9,7 +9,8 @@
 }
 
 body {
-    background: #070724;
+    background-color: #070724;
+    background-image: url('../../public/assets/background-stars.svg');
 }
 
 .container {
@@ -18,18 +19,5 @@ body {
     margin:  0 auto;
 }
 
-/* Header */
 
 
-
-nav li {
-    
-    list-style: none;
-
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 30px;
-}
