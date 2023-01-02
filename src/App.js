@@ -8,13 +8,15 @@ import { createRoot } from "react-dom/client";
 // import Jupiter from "./pages/Jupiter"
 // import Saturn from "./pages/Saturn"
 import Planet from "./components/Planet";
-import Navigation from "./components/navigation";
+import Header from "./components/header/Header";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
 
 export default function App() {
   return (
     <>
-      <Planet />
-      
+      <Header />
+      <Planet/>
     </>
     
   )
