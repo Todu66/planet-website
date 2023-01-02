@@ -1,0 +1,41 @@
+.both-side {
+    display: flex;
+    max-height: 600px;
+    height: 600px;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.left-side-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.right-side {
+    max-width: 450px;
+    width: 450px;
+}
+
+.top_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p {
+    color: #fff;
+}
+
+.source {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
